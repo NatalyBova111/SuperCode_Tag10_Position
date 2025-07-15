@@ -1,0 +1,76 @@
+@media (min-width: 1025px) {
+
+
+  .cards-row {
+    display: flex;
+    flex-direction: row;       
+    flex-wrap: wrap;           /* убирает расплывание, если экран меньше */
+    justify-content: center;   /* центрирует группу */
+    gap: 2rem;                 /* пространство между карточками */
+  }
+
+  .cards-row .card {
+    width: 220px;              /* фиксируем ширину каждой */
+    flex-shrink: 0;
+  }
+
+  /* Главный контейнер с карточками */
+  .car-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Контейнер с самими карточками */
+  .car-cards .offer-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 900px;
+  }
+
+  /* Сами карточки */
+  .car-cards .offer-cards .card {
+    width: 280px;
+    flex-shrink: 0;
+  }
+
+  /* Заголовок */
+  .car-cards h2 {
+    font-size: 2.5rem;
+  }
+
+  .main-header {
+    height: 500px;
+  }
+
+  .header h1 {
+    font-size: 48px;
+  }
+
+  .green-btn {
+    width: 360px;
+    height: 64px;
+    font-size: 18px;
+  }
+
+  .form {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  button.listbox {
+    width: 240px;
+  }
+
+  .footer .logo img {
+    width: 120px;
+  }
+
+  .footer .social-media img {
+    width: 32px;
+  }
+}
