@@ -1,17 +1,39 @@
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
 
-
-  .cards-row {
+  .nav-links {
     display: flex;
-    flex-direction: row;       
-    flex-wrap: wrap;           /* убирает расплывание, если экран меньше */
-    justify-content: center;   /* центрирует группу */
-    gap: 2rem;                 /* пространство между карточками */
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+    .nav-links a {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Urbanist', sans-serif;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+  }
+
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+
+.cards-row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 1.5rem;
   }
 
   .cards-row .card {
-    width: 220px;              /* фиксируем ширину каждой */
-    flex-shrink: 0;
+    width: 180px; /* чтобы 5 карточек уместились в строку */
   }
 
   /* Главный контейнер с карточками */
@@ -59,7 +81,8 @@
 
   .form {
     flex-direction: row;
-    gap: 24px;
+    justify-content: center;
+    gap: 1.5rem;
   }
 
   button.listbox {
