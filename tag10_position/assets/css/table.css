@@ -1,52 +1,80 @@
-@media (min-width: 768px) and (max-width: 1024px) {
-  .cards-row {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Навигация */
+  .navbar {
+    padding: 12px 24px;
+    max-width: 100%;
   }
 
-  .card {
-    width: 220px;
+  .menu-icon {
+    font-size: 26px;
   }
 
-  .offer-cards {
-    justify-content: center;
-    gap: 2rem;
+  .nav-links {
+    display: none; /* скрыты, если используется бургер-меню */
   }
 
-  .offer-cards .card {
-    width: 45%;
-  }
-
+  /* Заголовок */
   .main-header {
     height: 450px;
   }
 
   .header h1 {
-    font-size: 42px;
-  }
-
-  .green-btn {
-    width: 340px;
-    height: 60px;
-    font-size: 18px;
+    font-size: 40px;
   }
 
   .form {
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
   }
 
   button.listbox {
+    width: 260px;
+  }
+
+  /* Карточки info-cards */
+  .cards-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .cards-row .card {
     width: 200px;
+    height: auto;
+  }
+
+  /* Кнопка под карточками */
+  .green-btn {
+    width: 300px;
+    height: 56px;
+    font-size: 16px;
+  }
+
+  /* Карточки с машинами */
+  .car-cards {
+    padding: 2rem 1rem;
   }
 
   .car-cards h2 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
   }
 
+  .offer-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .offer-cards .card {
+    width: 45%;
+    max-width: 300px;
+  }
+
+  /* Footer */
   .footer .logo img {
     width: 100px;
   }
